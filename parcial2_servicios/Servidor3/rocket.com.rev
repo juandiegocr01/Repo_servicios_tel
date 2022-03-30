@@ -1,0 +1,14 @@
+$ORIGIN 50.168.192.in-addr.arpa.
+$TTL 3H
+@       IN SOA  servidor3.rocket.com.    root@rocket.com. (
+                                        0       ; serial
+                                        1D      ; refresh
+                                        1H      ; retry
+                                        1W      ; expire
+                                        3H )    ; minimum
+@       IN      NS      servidor3.rocket.com.
+@       IN      NS      servidor2.rocket.com.
+@       IN      NS      firewall.rocket.com.
+3       IN      PTR     servidor3.rocket.com.
+2       IN      PTR     servidor2.rocket.com.
+100     IN      PTR     firewall.rocket.com.
